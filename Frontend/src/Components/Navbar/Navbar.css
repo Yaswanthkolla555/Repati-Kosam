@@ -1,0 +1,58 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: #0B82C6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    margin-left: 4em;
+    height: 4rem;
+    width: 10rem;
+}
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+}
+/* Changes the text color of navbar links to white */
+.navbar-nav .nav-link {
+    color: white;
+}
+
+/* Ensures active link also appears white */
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.Login{
+    padding: 4px 14px;
+    border: none;
+    background-color:#00A482;
+    color: white;
+    border-radius: 10px;
+}
+.Emergency{
+    padding: 4px 10px;
+    border: none;
+    background-color:#FE5353;
+    color: white;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+}

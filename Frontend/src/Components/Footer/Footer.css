@@ -1,0 +1,108 @@
+.footer_top {
+    background-color: #0B82C6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_left input {
+    width: 80%;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.buttonSubmit {
+    padding: 6px 16px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    width: 6em;
+    background-color: #ED803A;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.Submitbox span {
+    font-weight: 300;
+    margin-left: 6px;
+    font-family: "Josefin Sans";
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right .matter {
+    display: flex;
+    gap: 10px;
+    margin: 4px;
+}
+
+.matter img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer_mid {
+    background-color: white;
+    padding: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.footer_mid .quotation {
+    color: #00A482;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bonheur Royale";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_end {
+    background-color: #0B82C6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text {
+    padding: 10%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_text img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

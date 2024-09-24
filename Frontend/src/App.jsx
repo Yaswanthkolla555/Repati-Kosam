@@ -1,21 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from "react-router-dom"
 import Navbar from './Components/Navbar/Navbar.jsx'
-import Header from './Components/Header/Header.jsx'
-import AboutUs from './Components/AboutUs/AboutUs.jsx'
-import Error from './Components/Error/Error.jsx'
-import Appointment from './Components/Appointment/Appointment.jsx'
-import BestDoc from "./Components/BestDoc/BestDoc.jsx"
+import Home from './pages/Home/Home.jsx'
 import Footer from './Components/Footer/Footer.jsx'
+import LoginPage from './Components/LoginPage/LoginPage.jsx'
+import Patient from './pages/Home/Patient/Patient.jsx'
 const App = () => {
+  const [showLogin,setShowLogin]=useState(false)
   return (
     <>
-      <Navbar />
-      <Header/>
-      <AboutUs/>
-      <Appointment/>
-      <BestDoc/>
-      <Footer/>
+    {showLogin?<LoginPage setShowLogin={setShowLogin}/>:<></>}
+      <Navbar setShowLogin={setShowLogin} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/User' element={<Patient/>}/>
+      </Routes>
+      <Footer />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -20,7 +20,7 @@ const Navbar = () => {
                                 <a className="nav-link" href="#">Contact Us</a>
                             </li>                          
                         </ul>
-                        <button className='Login'>Login</button>
+                        <button onClick={()=>setShowLogin(true)} className='Login'>Login</button>
                         <button className='Emergency'>Emergency</button>
                     </div>
                 </div>

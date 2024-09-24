@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar.jsx'
 import Home from './pages/Home/Home.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import LoginPage from './Components/LoginPage/LoginPage.jsx'
-import Patient from './pages/Home/Patient/Patient.jsx'
+import Patient from './pages/Patient/Patient.jsx'
 const App = () => {
   const [showLogin,setShowLogin]=useState(false)
   return (

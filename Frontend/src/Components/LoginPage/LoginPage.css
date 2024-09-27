@@ -9,7 +9,7 @@
 }
 .login-page-container{
     place-self: center;
-    width: max(30vw,470px);
+    width: max(30vw,450px);
     color: black;
     background-color: white;
     display: flex;
@@ -19,14 +19,15 @@
     border-radius: 10px;
     font-size: 14px;
     animation: fadeIn 1s;
+    overflow: hidden;
 }
 .login-page-left img{
     width: 100%;
     height:100%;
-    overflow: hidden;
     /* border-radius: 10px; */
 }
 .login-page-right{
+    width: 500px;
     margin-right: 25px;
     margin-top: 30px;
 }
@@ -55,7 +56,7 @@
     display: flex;
     gap: 10px;
 }
-.login-page-container button{
+.login-page-buttons-button{
     border: none;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -65,10 +66,26 @@
     background-color: orangered;
     font-size: 10px;
     cursor: pointer;
+    height: 40px;
+
 }
-.login-page-container .emergency{
-    background-color: #FE5353E8;
+.login-page-buttons-button {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 6px;
+    color: white;
+    background-color: orangered;
+    font-size: 10px;
+    cursor: pointer;   
 }
+
+.login-page-buttons-button.emergency {
+    height: 40px;
+    background-color: #FE5353E8; 
+}
+
 .login-page-condition{
     display: flex;
     align-items: flex-start;

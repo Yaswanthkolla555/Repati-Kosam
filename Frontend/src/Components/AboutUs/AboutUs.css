@@ -22,6 +22,10 @@
   background-color: #ed803a;
   border-radius: 36px;
   box-shadow: 0px 4px 4px #00000040;
+  background-size:contain ;
+}
+.imgrighttop{
+  width: 33%;
 }
 .iconsleft{
   color: #00A482;

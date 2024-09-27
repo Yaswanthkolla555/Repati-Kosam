@@ -16,8 +16,8 @@ const Box1 = () => {
           </div>
         </div>
         <div className="right">
-          <div className="imgright">
-            
+          <div >
+            <img className="imgright" src="./HomePageImgs/facilities.jpg" alt="" />
           </div>
         </div>
       </div>

@@ -65,9 +65,15 @@ const Patient = () => {
                 <button>View More <span><img src="./PatientImgs/Vector.png" alt="" /></span></button>
                 </div>
                 <div className="items">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
+                        <div className="box">
+                        <img src="./PatientImgs/prescription.png" alt="" />
+                        </div>
+                        <div className="box">
+                        <img src="./PatientImgs/prescription.png" alt="" />
+                        </div>
+                        <div className="box">
+                        <img src="./PatientImgs/prescription.png" alt="" />
+                        </div>
                 </div> 
             </div>
             <div className="Past-prep-items">
@@ -76,9 +82,15 @@ const Patient = () => {
                     <button>View More<span><img src="./PatientImgs/Vector.png" alt="" /></span></button>
                 </div>
                     <div className="items">
-                            <div className="box"></div>
-                            <div className="box"></div>
-                            <div className="box"></div>
+                            <div className="box">
+                                <img src="./PatientImgs/prescription.png" alt="" />
+                            </div>
+                            <div className="box">
+                            <img src="./PatientImgs/prescription.png" alt="" />
+                            </div>
+                            <div className="box">
+                            <img src="./PatientImgs/prescription.png" alt="" />
+                            </div>
 
                     </div>
             </div>

@@ -25,7 +25,7 @@ const LoginPage = ({setShowLogin}) => {
       <form onSubmit={onLogin} className='login-page-container'>
         <div className="login-page-left">
 
-          <img src="./LoginImgs/DocImg.png" alt="" />
+          <img src="./LoginImgs/DocsAnmImg.jpg" alt="" />
         </div>
         <div className="login-page-right">
           <div className="login-page-title">
@@ -38,8 +38,9 @@ const LoginPage = ({setShowLogin}) => {
               <input name='password' onChange={onChangeHandler} value={data.password} type="password" placeholder='Password' required />
           </div>
           <div className="Login-page-buttons">
-          <button type='submit'>{currState === "Sign Up" ? "Create Account" : "Login"}</button>
-          <button type='submit' className='emergency'>Emergency??Click Here</button>
+          <button className='login-page-buttons-button' type='submit'>{currState === "Sign Up" ? "Create Account" : "Login"}</button>
+          <button className='login-page-buttons-button emergency' type='submit'>Emergency??Click Here</button>
+
           </div>
           {currState === "Sign Up" ?
               <div className="login-page-condition">

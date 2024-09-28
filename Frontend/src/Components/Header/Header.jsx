@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="header">
+      <div className="header" id='home'>
         <div className="frame">
           <img className="dashicons-arrow" src="/leftarrow.png" alt="left arrow" />
           <img className="dashicons-arrow" src="/rightarrow.png" alt="right arrow" />

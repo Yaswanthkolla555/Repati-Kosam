@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer.jsx'
 import LoginPage from './Components/LoginPage/LoginPage.jsx'
 import Patient from './pages/Patient/Patient.jsx'
 import Emergency from './pages/Emergency/Emergency.jsx'
+import AppointmentForm from './Components/AppointmentForm/AppointmentForm.jsx'
 const App = () => {
   const [showLogin,setShowLogin]=useState(false)
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/User' element={<Patient/>}/>
         <Route path="/Emergency" element={<Emergency/>}/>
       </Routes>
+    
       <Footer />
     </>
   )

@@ -7,6 +7,7 @@ import passport from "passport";
 import userRouter from "./routes/userRoute.js";
 
 import dotenv from 'dotenv';
+import AppointmentRouter from "./routes/AppointmentRoute.js";
 dotenv.config();
 
 
@@ -35,12 +36,13 @@ passport.serializeUser((user,done)=>{
 })
 passport.deserializeUser((id, done) => {
    User.findById(id, (err, user) => {
-     done(err, user); // Retrieve user object from the database based on user.id stored in session
+     done(err, user);
    });
  });
 
 
  app.use("/api/user",userRouter)
+app.use("/api/appointment",AppointmentRouter)
 
  app.get("/",(req,res)=>{
     res.send("Hello World")

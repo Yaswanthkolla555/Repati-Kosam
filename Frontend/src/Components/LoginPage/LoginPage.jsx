@@ -1,6 +1,6 @@
 import React,{useContext,useEffect,useState} from 'react'
 import "./LoginPage.css"
-import {Link} from "react-router-dom"
+import {Link,useNavigate} from "react-router-dom"
 import axios from "axios"
 
 import { StoreContext } from '../../context/StoreContext';
@@ -15,6 +15,7 @@ const LoginPage = ({setShowLogin}) => {
     email:"",
     password:""
   })
+  const navigate = useNavigate();
   const onChangeHandler=(event)=>{
     const {name,value}=event.target;
     setData({...data,[name]:value})
@@ -33,6 +34,7 @@ const LoginPage = ({setShowLogin}) => {
             setIsLoggedIn(true);
             setUser(response.data.user);
             localStorage.setItem("token",response.data.token);
+            navigate("/user")
         } else {
             alert(response.data.message);
         }

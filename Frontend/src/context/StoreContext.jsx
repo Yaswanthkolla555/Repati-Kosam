@@ -15,8 +15,7 @@ const StoreContextProvider=(props)=>{
         setIsLoggedIn(false);
         // setUser(null);
         localStorage.removeItem('token');
-        console.log("User logged out and localStorage cleared.");
-        setCartItems({});       
+        console.log("User logged out and localStorage cleared.");     
     };
 
     useEffect(()=>{

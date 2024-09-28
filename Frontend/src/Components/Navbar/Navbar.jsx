@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.css"
 import {Link} from "react-router-dom"
+import {StoreContext} from "../../context/StoreContext.jsx"
 const Navbar = ({setShowLogin}) => {
+    const {logout,setToken,token}=useContext(StoreContext)
+    const handleLogOut = () => {
+        localStorage.removeItem("token")
+        setToken("")
+        logout();
+    };
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -23,10 +30,23 @@ const Navbar = ({setShowLogin}) => {
                                 <a className="nav-link" href="#contactus">Contact Us</a>
                             </li>                          
                         </ul>
-                        <button onClick={()=>setShowLogin(true)} className='Login'>Login</button>
                             <Link to="/Emergency">
                             <button className='Emergency'>Emergency</button>
                             </Link>
+                        {/* <button onClick={()=>setShowLogin(true)} className='Login'>Login</button> */}
+
+                {!token ?
+                    <button onClick={() =>setShowLogin(true) } className='Login'>Login</button>
+                    :
+                    <div className='navbar-profile'>
+                        <img src="/profile_icon.png" alt="Profile" />
+                        <ul className="navbar-profile-dropdown">
+                            <li>Profile</li>
+                            <hr />
+                            <li onClick={handleLogOut}>Logout</li>
+                        </ul>
+                    </div>
+                }
                     </div>
                 </div>
             </nav>
